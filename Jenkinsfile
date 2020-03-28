@@ -4,7 +4,7 @@ pipeline {
     stage('En&Tools') {
       steps {
         sh 'docker --version'
-        echo 'env'
+        sh 'ls -ltr'
       }
     }
 
