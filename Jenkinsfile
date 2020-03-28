@@ -1,8 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('En&Tools') {
+    stage('Env&Tools') {
       steps {
+        sh 'env'
         sh 'docker --version'
         sh 'ls -ltr'
       }
